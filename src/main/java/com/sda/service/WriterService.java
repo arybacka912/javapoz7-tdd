@@ -34,6 +34,8 @@ public class WriterService {
         return builder.append(names[names.length - 1]).toString();
     }
     private String getDelimiter(int index, String[] names, String name){
+        //names.length - 2 ponieważ: Hello(0), Szymon(1), Anna(2), Jan(3)
+        //          4 indeksy - 2  czyli po Anna będzie "and"
         return index != names.length - 2 ? ", " :
                 (isCapitalizedName(name) ? " AND " : " and ");
     }
