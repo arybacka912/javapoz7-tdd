@@ -35,3 +35,4 @@ Feature:
     And I pass multiple numbers with whitespaces value
     When I trigger calculate function
     Then I get 9 as a result
+
